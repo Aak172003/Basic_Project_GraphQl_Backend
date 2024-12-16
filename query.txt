@@ -1,0 +1,39 @@
+1 -> 
+query($getUserId: ID!) {
+    getTodos {
+        id
+        completed
+        userId
+        user {
+            id
+            name
+            email
+            phone
+        }
+    }
+    getAllUsers {
+        name
+        email
+      phone  
+    },
+    
+    getUser(id: $getUserId) {
+        website
+    }
+}
+
+2 -> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
